@@ -1,0 +1,165 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+/*.example-class-selector p {
+	 Colors are in hexadecimal: http://www.colorpicker.com/ 	
+	color: #CC00AA;
+}*/
+
+/* this style exists to make it obvious that you've successfully linked
+   the CSS to the page. feel free to remove it once the link is working. */
+body {
+     /*border: 1px dotted gray;*/
+     padding: 20px;
+     text-align: center;
+}
+
+.project {
+     margin-left: 20px;
+}
+
+/* find project class, then in project class, find all p elements */
+/* .project = project class, #project = project id */
+.project p {
+     font-variant: small-caps;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("http://lorempixel.com/1140/283");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+}
+
+
+
+/* SIGN UP FORM CSS */
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  text-align: center;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+.box {
+    float: left;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    /*font-size: */
+}
+
+/* ARROW CSS */
+i {
+     border: solid black;
+     border-width: 0 3px 3px 0;
+     display: inline-block;
+     padding: 3px;
+}
+
+.right {
+     transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+     float: left;
+     margin-left: 10px;
+     margin-top: 10px;
+     padding: 5px;
+}
+
+.left {
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     float: left;
+     margin-left: 10px;
+     margin-top: 10px;
+     padding: 5px;
+}
+
+.favoritebtn {
+     padding: 14px 20px;
+     background-color: #ffbe00;
+}
+
+.deletebtn {
+     padding: 14px 20px;
+     background-color: #f44336;
+}
