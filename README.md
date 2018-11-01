@@ -1,5 +1,5 @@
-# Lab 2
+# Greek 2 Go
 
-Lab 2 introduces you to static HTML, CSS, and Bootstrap.
+Greek 2 Go is our web app that we build using HTML, CSS, and JavaScript.
 
-Originally created by Scott Klemmer, Michael Bernstein, and a coalition of TAs. This version was modified by Sean Kross from [a forked version](https://github.com/pgbovine/lab2) which incorporates changes from Philip Guo.
+Created by Allston Fojas, Mark Tupas, and Raul Garza. This web app is for our COGS 120 project.
