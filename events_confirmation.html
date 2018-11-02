@@ -1,11 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
   <head>
-  	<title>Events - New User</title>	
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<link href="css/introHCI.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <title>Events Confirmation</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/introHCI.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -15,10 +17,9 @@
       <button class="openbtn" onclick="openNav()">☰ Settings</button>
     </div>
 
-
-    <!-- NOTE: change value of 'action' to the link of our feed page/homepage -->
     <div class="container">
-      <h1>Events</h1>
+      <h1>Events Added Confirmation</h1>
+      <p>Your events have been successfully added to your events list. Please return to the home page for organization accounts.</p>
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 <!--         <a href="events.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -30,12 +31,9 @@
       </div>
 
 
-
       <hr>
 
-      <p>You have no events. Click on Take Questionnaire to see which Greek organizations best align with your personal attributes.</p>
-
-      <a href="questionnaire.html" class="button">Take Questionnaire</a>
+      <input type="button" onclick="location.href='org_page.html';" value="Return To Home Page"/>
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>

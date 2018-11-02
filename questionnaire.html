@@ -6,23 +6,34 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href="css/introHCI.css" rel="stylesheet" />
-  	<!-- this is a comment in HTML -->
-
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-      <![endif]-->        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
   </head>
 
   <body>
-    <form action="matches.html" style="border:1px solid #ccc">
 
-      <div class="container">
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Settings</button>
+    </div>
 
-        <h1>Questionnaire</h1>
-        <hr>
+
+
+
+    <div class="container">
+      <h1>Questionnaire</h1>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<!--         <a href="events.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="profile.html"><i class="fa fa-fw fa-user-circle-o"></i>Profile</a>
+        <a href="explore.html"><i class="fa fa-fw fa-search"></i>Explore</a>
+        <a href="questionnaire.html"><i class="fa fa-fw fa-refresh"></i>Retake Questionnaire</a>
+ -->          <!--<a href="#"><i class="fa fa-fw fa-heart"></i>Favorites</a>-->
+        <a href="home.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+      </div>
+
+
+      <hr>
+
+      <form action="matches.html" style="border:1px solid #ccc">
 
         <p>Which type of Greek organization are you interested in learning more about?</p>
 
@@ -64,7 +75,7 @@
           <button type="button" class="number-button">5</button>
         </div>
 
-        <div class="attribute-leadership">
+        <div class="attribute-social">
           <span>Social:</span>
           <span>Hangouts, Parties</span>
           <button type="button" class="number-button">1</button>
@@ -74,7 +85,7 @@
           <button type="button" class="number-button">5</button>
         </div>
 
-        <div class="attribute-leadership">
+        <div class="attribute-philanthropy">
           <span>Philanthropy:</span>
           <span>Volunteer, Charity</span>
           <button type="button" class="number-button">1</button>
@@ -87,13 +98,13 @@
         <div class="submit-button">
           <button type="submit" class="submitbtn">Submit</button>
         </div>
-
-      </div>
-    </form>
+      </form>
+    </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/questionnaire.js"></script>
+    <script src="js/greek2go.js"></script>
 
   </body>
 </html>

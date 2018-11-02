@@ -11,17 +11,21 @@
   <body>
 
     <!-- NOTE: change value of 'action' to the link of our feed page/homepage -->
-    <form action="events_new_user.html" style="border:1px solid #ccc">
+    <form action="org_page.html" style="border:1px solid #ccc">
       <div class="container">
         <h1>Sign Up</h1>
-        <p>Please fill in this form to create a student account.</p>
+        <p>Please fill in this form to create an organization account.</p>
         <hr>
 
-        <label for="first-name"><b>First Name</b></label>
-        <input type="text" placeholder="Enter First Name" name="name" required>
+        <p>Which type of Greek organization are you signing up as?</p>
 
-        <label for="last-name"><b>Last Name</b></label>
-        <input type="text" placeholder="Enter Last Name" name="name" required>
+        <div class="greek-organization">
+          <button type="button" class="org-btn">Fraternity</button>
+          <button type="button" class="org-btn">Sorority</button>
+        </div>
+
+        <label for="org-name"><b>Organization Name</b></label>
+        <input type="text" placeholder="Enter Organization Name" name="org-name" required>
 
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" required>
@@ -36,5 +40,11 @@
    -->      </div>
       </div>
     </form>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/questionnaire.js"></script>
+    <script src="js/greek2go.js"></script>
+
   </body>
 </html>
