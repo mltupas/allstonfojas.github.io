@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Events - New User</title>	
+	<title>Profile</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/introHCI.css" rel="stylesheet" />
@@ -19,22 +19,20 @@
 <body>
 
 <!-- NOTE: change value of 'action' to the link of our feed page/homepage -->
-<div class="container">
-  <h1>Events</h1>
-  <hr>
+<form action="profile_confirmation.html" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Profile</h1>
+    <p>In the Profile Secion, you can reset your password.</p>
+    <hr>
 
-  <p>You have no events. Click on Take Questionnaire to see which Greek organizations best align with your personal attributes.</p>
+    <label for="new-password"><b>New Password</b></label>
+    <input type="text" placeholder="Enter New Password" name="new-password" required>
 
-<!--   <div class="questionnaire-button">
- -->
-  <!-- <form action="questionnaire.html">
-    <button type="button" class="questionnairebtn">Take Questionnaire</button>
-  </form> -->
-  <!-- </div> -->
-
-  <a href="questionnaire.html" class="button">Take Questionnaire</a>
-
-</div>
+    <div class="reset-password-button">
+      <button type="submit" class="reset-password-btn">Reset Password</button>
+    </div>
+  </div>
+</form>
 
 </body>
 </html>
