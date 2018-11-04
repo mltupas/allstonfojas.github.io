@@ -14,18 +14,21 @@
     <form action="org_page.html" style="border:1px solid #ccc">
       <div class="container">
         <h1>Sign Up</h1>
-        <p>Please fill in this form to create an organization account.</p>
+        <p>Please fill in this form to create a fraternity account.</p>
         <hr>
 
-        <p>Which type of Greek organization are you signing up as?</p>
+<!--         <p>Which type of Greek organization are you signing up as?</p>
 
         <div class="greek-organization">
           <button type="button" class="org-btn">Fraternity</button>
           <button type="button" class="org-btn">Sorority</button>
         </div>
+ -->
+        <label for="org-name"><b>Fraternity Name</b></label>
+        <input type="text" placeholder="Enter Fraternity Name" name="org-name" required>
 
-        <label for="org-name"><b>Organization Name</b></label>
-        <input type="text" placeholder="Enter Organization Name" name="org-name" required>
+        <label class="org-letters"><b>Greek Letters: </b></label>
+        <input type="text" placeholder="Enter your Greek letters" name="org-letters" required>
 
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" required>
