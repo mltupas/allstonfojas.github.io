@@ -57,10 +57,13 @@ button:hover {
 	margin: 0 auto;
 }
 
-.login .links #createaccount {
+.login .links #createstudentacc {
 	float: left;
 }
 
+.login .links #createorgacc {
+	float: none;
+}
 .login .links #forgotpassword {
   float: right;
 }
